@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p>Chúc một ngày tốt lành. 
+    <br />
+    Chúng ta sẽ chọn cách tiếp cận từ trên xuống dưới. Thiết kế UI trước, sau đó code sau
+    </p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label for="ddlCountry">Quốc gia</label>
+                    <select id="ddlCountry" class="form-control">
+                        <option value="">--Không chọn--</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ddlProvince">Tỉnh thành</label>
+                    <select id="ddlProvince" class="form-control">
+                        <option value="">--Không chọn--</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ddlDistrict">Quận huyện</label>
+                    <select id="ddlDistrict" class="form-control">
+                        <option value="">--Không chọn--</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ddlWard">Xã phường</label>
+                    <select id="ddlWard" class="form-control">
+                        <option value="">--Không chọn--</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h1>OK, chúng ta đã có giao diện rồi. Giờ code thôi</h1>
+            <div style="color:green; font-size:22px">
+                Bạn đang ở khu vực: <div id="divResult"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    
+<script src="~/Scripts/app.js"></script>
+    }
